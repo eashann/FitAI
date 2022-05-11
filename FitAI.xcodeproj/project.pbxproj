@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B78C51062B1B31546BA7CABB /* Pods_FitAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5BF8DBFC904BD794CC22C23 /* Pods_FitAI.framework */; };
+		D5139174282B721A00D68B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5139173282B721A00D68B0E /* AppDelegate.swift */; };
+		D5139176282B721A00D68B0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5139175282B721A00D68B0E /* SceneDelegate.swift */; };
+		D5139178282B721A00D68B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5139177282B721A00D68B0E /* ViewController.swift */; };
+		D513917B282B721A00D68B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5139179282B721A00D68B0E /* Main.storyboard */; };
+		D513917D282B721D00D68B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D513917C282B721D00D68B0E /* Assets.xcassets */; };
+		D5139180282B721D00D68B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D513917E282B721D00D68B0E /* LaunchScreen.storyboard */; };
+		D51391B5282B82BA00D68B0E /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51391B4282B82BA00D68B0E /* CameraFeedManager.swift */; };
+		D51391C4282B82CA00D68B0E /* PoseEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51391B8282B82CA00D68B0E /* PoseEstimator.swift */; };
+		D51391C5282B82CA00D68B0E /* movenet_lightning.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D51391B9282B82CA00D68B0E /* movenet_lightning.tflite */; };
+		D51391C6282B82CA00D68B0E /* MoveNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51391BA282B82CA00D68B0E /* MoveNet.swift */; };
+		D51391C7282B82CA00D68B0E /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51391BB282B82CA00D68B0E /* PoseNet.swift */; };
+		D51391C8282B82CA00D68B0E /* PoseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51391BC282B82CA00D68B0E /* PoseData.swift */; };
+		D51391C9282B82CA00D68B0E /* posenet.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D51391BD282B82CA00D68B0E /* posenet.tflite */; };
+		D51391CA282B82CA00D68B0E /* movenet_thunder.tflite in Resources */ = {isa = PBXBuildFile; fileRef = D51391BE282B82CA00D68B0E /* movenet_thunder.tflite */; };
+		D51391CB282B82CA00D68B0E /* PoseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51391BF282B82CA00D68B0E /* PoseConfig.swift */; };
+		D51391CC282B82CA00D68B0E /* Data+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51391C1282B82CA00D68B0E /* Data+TFLite.swift */; };
+		D51391CD282B82CA00D68B0E /* CGSize+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51391C2282B82CA00D68B0E /* CGSize+TFLite.swift */; };
+		D51391CE282B82CA00D68B0E /* CVPixelBuffer+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51391C3282B82CA00D68B0E /* CVPixelBuffer+TFLite.swift */; };
+		D51391D1282B82DD00D68B0E /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51391D0282B82DD00D68B0E /* OverlayView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D14A8007D0E9AC7681EE33A /* Pods-FitAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitAI.debug.xcconfig"; path = "Target Support Files/Pods-FitAI/Pods-FitAI.debug.xcconfig"; sourceTree = "<group>"; };
+		C5BF8DBFC904BD794CC22C23 /* Pods_FitAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5139170282B721A00D68B0E /* FitAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5139173282B721A00D68B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5139175282B721A00D68B0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D5139177282B721A00D68B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D513917A282B721A00D68B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D513917C282B721D00D68B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D513917F282B721D00D68B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5139181282B721D00D68B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D51391B4282B82BA00D68B0E /* CameraFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		D51391B8282B82CA00D68B0E /* PoseEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseEstimator.swift; sourceTree = "<group>"; };
+		D51391B9282B82CA00D68B0E /* movenet_lightning.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = movenet_lightning.tflite; sourceTree = "<group>"; };
+		D51391BA282B82CA00D68B0E /* MoveNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveNet.swift; sourceTree = "<group>"; };
+		D51391BB282B82CA00D68B0E /* PoseNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
+		D51391BC282B82CA00D68B0E /* PoseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseData.swift; sourceTree = "<group>"; };
+		D51391BD282B82CA00D68B0E /* posenet.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = posenet.tflite; sourceTree = "<group>"; };
+		D51391BE282B82CA00D68B0E /* movenet_thunder.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = movenet_thunder.tflite; sourceTree = "<group>"; };
+		D51391BF282B82CA00D68B0E /* PoseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseConfig.swift; sourceTree = "<group>"; };
+		D51391C1282B82CA00D68B0E /* Data+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+TFLite.swift"; sourceTree = "<group>"; };
+		D51391C2282B82CA00D68B0E /* CGSize+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+TFLite.swift"; sourceTree = "<group>"; };
+		D51391C3282B82CA00D68B0E /* CVPixelBuffer+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+TFLite.swift"; sourceTree = "<group>"; };
+		D51391D0282B82DD00D68B0E /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		EF81857D3871F3E2826D1641 /* Pods-FitAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitAI.release.xcconfig"; path = "Target Support Files/Pods-FitAI/Pods-FitAI.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D513916D282B721A00D68B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78C51062B1B31546BA7CABB /* Pods_FitAI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B13AEE8DB92A7DCA3F1BF55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5BF8DBFC904BD794CC22C23 /* Pods_FitAI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5139167282B721A00D68B0E = {
+			isa = PBXGroup;
+			children = (
+				D5139172282B721A00D68B0E /* FitAI */,
+				D5139171282B721A00D68B0E /* Products */,
+				FDB9775D7EAE583A94E271E0 /* Pods */,
+				1B13AEE8DB92A7DCA3F1BF55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5139171282B721A00D68B0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5139170282B721A00D68B0E /* FitAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5139172282B721A00D68B0E /* FitAI */ = {
+			isa = PBXGroup;
+			children = (
+				D51391B3282B82BA00D68B0E /* Camera */,
+				D51391B6282B82CA00D68B0E /* ML */,
+				D51391CF282B82DD00D68B0E /* Views */,
+				D5139173282B721A00D68B0E /* AppDelegate.swift */,
+				D5139175282B721A00D68B0E /* SceneDelegate.swift */,
+				D5139177282B721A00D68B0E /* ViewController.swift */,
+				D5139179282B721A00D68B0E /* Main.storyboard */,
+				D513917C282B721D00D68B0E /* Assets.xcassets */,
+				D513917E282B721D00D68B0E /* LaunchScreen.storyboard */,
+				D5139181282B721D00D68B0E /* Info.plist */,
+			);
+			path = FitAI;
+			sourceTree = "<group>";
+		};
+		D51391B3282B82BA00D68B0E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				D51391B4282B82BA00D68B0E /* CameraFeedManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		D51391B6282B82CA00D68B0E /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				D51391B7282B82CA00D68B0E /* Models */,
+				D51391C0282B82CA00D68B0E /* Extensions */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		D51391B7282B82CA00D68B0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D51391B8282B82CA00D68B0E /* PoseEstimator.swift */,
+				D51391B9282B82CA00D68B0E /* movenet_lightning.tflite */,
+				D51391BA282B82CA00D68B0E /* MoveNet.swift */,
+				D51391BB282B82CA00D68B0E /* PoseNet.swift */,
+				D51391BC282B82CA00D68B0E /* PoseData.swift */,
+				D51391BD282B82CA00D68B0E /* posenet.tflite */,
+				D51391BE282B82CA00D68B0E /* movenet_thunder.tflite */,
+				D51391BF282B82CA00D68B0E /* PoseConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D51391C0282B82CA00D68B0E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D51391C1282B82CA00D68B0E /* Data+TFLite.swift */,
+				D51391C2282B82CA00D68B0E /* CGSize+TFLite.swift */,
+				D51391C3282B82CA00D68B0E /* CVPixelBuffer+TFLite.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D51391CF282B82DD00D68B0E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D51391D0282B82DD00D68B0E /* OverlayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDB9775D7EAE583A94E271E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D14A8007D0E9AC7681EE33A /* Pods-FitAI.debug.xcconfig */,
+				EF81857D3871F3E2826D1641 /* Pods-FitAI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D513916F282B721A00D68B0E /* FitAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5139184282B721D00D68B0E /* Build configuration list for PBXNativeTarget "FitAI" */;
+			buildPhases = (
+				5A181C3A2B3F114AFBB1E2BC /* [CP] Check Pods Manifest.lock */,
+				D513916C282B721A00D68B0E /* Sources */,
+				D513916D282B721A00D68B0E /* Frameworks */,
+				D513916E282B721A00D68B0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitAI;
+			productName = FitAI;
+			productReference = D5139170282B721A00D68B0E /* FitAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5139168282B721A00D68B0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					D513916F282B721A00D68B0E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = D513916B282B721A00D68B0E /* Build configuration list for PBXProject "FitAI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5139167282B721A00D68B0E;
+			productRefGroup = D5139171282B721A00D68B0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D513916F282B721A00D68B0E /* FitAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D513916E282B721A00D68B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5139180282B721D00D68B0E /* LaunchScreen.storyboard in Resources */,
+				D513917D282B721D00D68B0E /* Assets.xcassets in Resources */,
+				D51391C9282B82CA00D68B0E /* posenet.tflite in Resources */,
+				D51391CA282B82CA00D68B0E /* movenet_thunder.tflite in Resources */,
+				D513917B282B721A00D68B0E /* Main.storyboard in Resources */,
+				D51391C5282B82CA00D68B0E /* movenet_lightning.tflite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A181C3A2B3F114AFBB1E2BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitAI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D513916C282B721A00D68B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5139178282B721A00D68B0E /* ViewController.swift in Sources */,
+				D51391CE282B82CA00D68B0E /* CVPixelBuffer+TFLite.swift in Sources */,
+				D51391CD282B82CA00D68B0E /* CGSize+TFLite.swift in Sources */,
+				D51391C7282B82CA00D68B0E /* PoseNet.swift in Sources */,
+				D51391C8282B82CA00D68B0E /* PoseData.swift in Sources */,
+				D5139174282B721A00D68B0E /* AppDelegate.swift in Sources */,
+				D51391C6282B82CA00D68B0E /* MoveNet.swift in Sources */,
+				D51391CB282B82CA00D68B0E /* PoseConfig.swift in Sources */,
+				D51391C4282B82CA00D68B0E /* PoseEstimator.swift in Sources */,
+				D51391D1282B82DD00D68B0E /* OverlayView.swift in Sources */,
+				D51391B5282B82BA00D68B0E /* CameraFeedManager.swift in Sources */,
+				D5139176282B721A00D68B0E /* SceneDelegate.swift in Sources */,
+				D51391CC282B82CA00D68B0E /* Data+TFLite.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D5139179282B721A00D68B0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D513917A282B721A00D68B0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D513917E282B721D00D68B0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D513917F282B721D00D68B0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5139182282B721D00D68B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5139183282B721D00D68B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5139185282B721D00D68B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D14A8007D0E9AC7681EE33A /* Pods-FitAI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A947SBD283;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FitAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5139186282B721D00D68B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF81857D3871F3E2826D1641 /* Pods-FitAI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A947SBD283;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FitAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D513916B282B721A00D68B0E /* Build configuration list for PBXProject "FitAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5139182282B721D00D68B0E /* Debug */,
+				D5139183282B721D00D68B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5139184282B721D00D68B0E /* Build configuration list for PBXNativeTarget "FitAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5139185282B721D00D68B0E /* Debug */,
+				D5139186282B721D00D68B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5139168282B721A00D68B0E /* Project object */;
+}
