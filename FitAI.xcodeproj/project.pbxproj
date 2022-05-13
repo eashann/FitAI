@@ -97,12 +97,12 @@
 		D5139172282B721A00D68B0E /* FitAI */ = {
 			isa = PBXGroup;
 			children = (
+				D58F5EB2282EB8D1007D1015 /* Controller */,
 				D51391B3282B82BA00D68B0E /* Camera */,
 				D51391B6282B82CA00D68B0E /* ML */,
 				D51391CF282B82DD00D68B0E /* Views */,
 				D5139173282B721A00D68B0E /* AppDelegate.swift */,
 				D5139175282B721A00D68B0E /* SceneDelegate.swift */,
-				D5139177282B721A00D68B0E /* ViewController.swift */,
 				D5139179282B721A00D68B0E /* Main.storyboard */,
 				D513917C282B721D00D68B0E /* Assets.xcassets */,
 				D513917E282B721D00D68B0E /* LaunchScreen.storyboard */,
@@ -159,6 +159,14 @@
 				D51391D0282B82DD00D68B0E /* OverlayView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D58F5EB2282EB8D1007D1015 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5139177282B721A00D68B0E /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		FDB9775D7EAE583A94E271E0 /* Pods */ = {
