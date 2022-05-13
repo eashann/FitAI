@@ -1,6 +1,6 @@
 # FitAI
 
-How to run the project:
+## How to run the project:
 
 Just clone the project from the following GitHub link. Install the podfile file. And you are ready to run the project. 
 You must need a physical iPhone device to run the app.
